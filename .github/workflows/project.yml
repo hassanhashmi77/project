@@ -22,9 +22,8 @@ jobs:
     - name: node setup 
       uses: actions/setup-node@v2-beta
       with:
-        node-version: '12'
+        version: 12
     
-    - name: GitHub Action for Yarn
     - uses: Borales/actions-yarn@v2.3.0
       with:
        cmd: install
