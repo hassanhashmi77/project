@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
+import Allcomponent from './Allcomponent';
+import { GlobProvider } from './hookuse/UseContext';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hassan Hashmi</h1>
-      </header>
-    </div>
+    <GlobProvider>
+
+
+      <Allcomponent />
+    </GlobProvider>
   );
 }
 
